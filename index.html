@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <form>
+            <label for="amount">Amount:</label> <br>
+            <input type="number" placeholder="Enter Amount" id="amount">
+
+            <div class="dropdown">
+                <div class="from">
+                    <label for="from">From:</label> <br>
+                    <div class="wrap">
+                        <img src="https://flagsapi.com/US/flat/64.png" alt="">
+                        <select id="from">
+                            <Option selected>USD</Option>
+                            <Option>INR</Option>
+                            <Option>EUR</Option>
+                            <Option>AUD</Option>
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="to">
+                    <label for="to">To:</label> <br>
+                    <div class="wrap">
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="">
+                        <select id="to">
+                            <Option>USD</Option>
+                            <Option selected>INR</Option>
+                            <Option>EUR</Option>
+                            <Option>AUD</Option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg">
+                1 USD = 80 INR
+            </div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="codes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
