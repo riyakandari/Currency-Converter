@@ -58,6 +58,10 @@ select {
     border: none;
 }
 
+select:focus {
+    outline: none;
+}
+
 .msg {
     margin-block: 1.5rem;
 }
@@ -70,4 +74,8 @@ button {
     border-radius: 10px;
     color: #fff;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: purple;
 }
